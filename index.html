@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_App - Provide a small questions and ans game.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <nav>
+            <p>Qui<span>Z</span>app</p>
+        </nav>
+        <div class="quiz-game-box">
+            <!-- game box for start the game  -->
+             <div class="game-box">
+             <button type="button" id="playBtn">Click To Play</button>
+             </div>
+             <!-- quiz box for display the quiz to user  -->
+             <div class="quiz-box in-active">
+                <p id="playOutOf">1 Out Of 10</p>
+                <h2 id="question">Q1: What's on your mind ?</h2>
+                <div class="option" id="oneOpt">A</div>
+                <div class="option" id="twoOpt">B</div>
+                <div class="option" id="threeOpt">C</div>
+                <div class="option" id="fourOpt">D</div>
+                <button type="button" id="submitBtn">Submit</button>
+             </div>
+             <!-- score box display score to user  -->
+             <div class="score-box in-active">
+                <h2>Your Scorecard</h2>
+                <p>Right Answer : <span class="ri-ans">0</span></p>
+                <p>Wrong Answer : <span class="wr-ans">0</span></p>
+                <p>Total Score : <span class="ans">0</span></p>
+                <div class="buttons">
+                    <button type="button" id="playAgain">Play Again</button>
+                    <button type="button" id="exitBtn">Exit</button>
+                </div>
+             </div>
+
+        </div>
+    </div>
+    <script src="quizquestion.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
